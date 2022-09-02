@@ -1,0 +1,117 @@
+/* 자손 선택자  접근*/
+.m-parents p {
+    background-color: yellow;
+}
+
+/* 자식 선택자 접근 */
+.m-parents > p{
+    border: 3px solid black;
+} 
+
+/* 일반 동위 선택자 */
+.m-sibling ~ p{
+    background-color: aquamarine;
+}
+/* 인접동위선택자: 바로뒤에 있는 요소의 다자인을 바꾸고 싶을때 */
+.m-sibiling + p{
+    background-color: chocolate;
+}
+.test-ul li{
+    float: left;
+    padding: 0 20px;
+    list-style-type: none;
+    border-right: 1px solid black;
+}
+.text-ul .last-li +li{
+    border:none;
+}
+html{
+    height: 1000%;
+}
+
+/* 링크(a태그)에 사용하는 동적선택자 */
+a:link      {color: aqua;}
+a:visited   {color:red;}
+a:hover     {color: black;}
+a:active    {color:green;}
+.focus-input:focus{  background-color: olivedrab;
+}
+/*체크상태일 떄 바로뒤에 있는 span태그의 배경색을 바꾼다*/
+.checked:checked + span{
+    background-color: red;
+
+}
+/* disable 상태일때, 바로 뒤에 있는 span태그의 글자 색을 바꾼다 */
+.disabled-box:disabled + span{
+    color: gray;
+    text-decoration-line: line-through;
+
+}
+/* 구조의사 클래스 */
+.table-child{
+    border-collapse: collapse;
+}
+.table-child tr:first-child{
+    background-color: aqua;
+}
+.table-child tr td:first-child{
+    background-color: blue;
+}
+.table-child tr:nth-child(2n){
+    background-color: yellow;
+}
+.of-type li:first-of-type{
+    background-color: aqua;
+}
+.of-type .type :first-of-type{
+    background-color: blue;
+}
+.first-letter::first-letter{
+    font-size: 1.5em;
+}
+.first-line::first-line{
+    color: red;
+}
+.before::before{
+    /* before을 이용하여 앞에 들어가는 내용 */
+    color: blue;
+    /* 컨텐츠 안에 들어가는 내용을 꾸민다 */
+    content: "글자아무거나";
+    background-color: yellow;
+    padding: 10px;
+}
+.after::after{
+    /* 컨텐츠에 아무 내용이 없을때는
+    display값을 inline-block으로 두어 크기를 설정할 수 있게 한다 */
+    display: inline-block;
+    content: "";
+    color: violet;
+    background-color: red;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.selection::selection{
+    color: blue;
+    background-color: bisque;
+}
+input[type = "button"]+span{
+    background-color: blue;
+}
+input[type="radio"] + span{
+    color: aquamarine;
+}
+/* not의사 클래스는 앞에 요소를 붙여서 지정하지 않고 
+괄호 안에 제외할 태그나 선택자를 입력한다 */
+body :not(p){
+    color: blueviolet;
+}
+.not:not(p){
+    color: black;
+}
+.color{
+    color: brown;
+}
+h1.color{
+    color: powderblue;
+}

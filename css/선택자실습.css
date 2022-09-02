@@ -1,0 +1,16 @@
+.li-background > li{
+    background-color: red;
+}
+
+.input-focus:focus{
+    font-size: 32px;
+    color: green;
+    
+}
+input:checked +span{
+    text-decoration-line: line-through;
+} 
+.color li:nth-child(2n){
+    background-color: red;
+
+}

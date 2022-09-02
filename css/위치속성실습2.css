@@ -1,0 +1,11 @@
+.list-2 {
+    overflow: auto;
+    padding: 20px;
+    background-color: yellow;
+    list-style-type: none;
+}
+li{
+    background-color: green;
+    float: left;
+    padding: 10px;
+}

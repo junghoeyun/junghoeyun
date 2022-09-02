@@ -1,0 +1,37 @@
+.div{
+    border: 3px solid red;
+    padding: 20px 0px;
+}
+.div ul{
+    list-style-type: none;
+    
+}
+.div ul li a{
+    text-decoration: none;
+    color: black;
+}
+.tag ul {
+    list-style-type: none;
+}
+.tag ul li{
+    float: right;
+    background-color: blue;
+    border-radius: 20px;
+    color: white;
+    padding: 5px 10px;
+
+    /* float 가로 배치 후, 간격 벌리는거 */
+    margin: 0 10px;
+}
+
+.notice p::after{
+    display: inline-block;
+    content: "N";
+    text-align: center;
+    background-color: orange;
+    border-radius: 50%;
+    color: white;
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+}

@@ -1,0 +1,47 @@
+.header{
+    border: 3px solid orange;
+}
+.nav{
+    border: 3px solid red;
+    float: left;
+    width: 30%;
+
+}
+.section{
+    border: 3px solid purple;
+}
+.m-box{
+    background-color: beige;
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+}
+.float-box{
+    background-color: aqua;
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+.layout{
+    border: 3px solid brown;
+
+    text-align: center;
+}
+.layout-header{
+    border: 3px solid yellow;
+}
+.layout-nav{
+    border: 3px solid pink;
+    width: 25%;
+    float: left;
+}
+.layout-section{
+    border: 3px solid red;
+    width: 75%;
+    margin-left: 25%;
+
+}
+.layout-footer{
+    border: 3px solid purple;
+    clear: both;
+}

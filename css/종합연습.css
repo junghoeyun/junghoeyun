@@ -1,0 +1,36 @@
+@import url("reset.css");
+header{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+
+.dropbtn{
+    display: block;
+    font-weight: 100px;
+    color : rgb(37, 37, 37);
+    cursor : pointer;
+  }
+  .dropdown-content{
+    display : none;
+    position : absolute;
+    z-index : 1; /*다른 요소들보다 앞에 배치*/
+    background-color: #f9f9f9;
+  }
+  
+  .dropdown-content a{
+    display : block;
+    text-decoration : none;
+    color : rgb(37, 37, 37);
+    font-size: 12px;
+    padding : 12px 20px;
+  }
+  
+  .dropdown-content a:hover{
+    background-color : #ececec
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }

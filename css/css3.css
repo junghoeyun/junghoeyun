@@ -1,0 +1,9 @@
+.m-textbox{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+.text-overflow{
+word-break: break-all;
+text-overflow: ellipsis;
+}
