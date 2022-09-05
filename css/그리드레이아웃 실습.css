@@ -1,0 +1,33 @@
+div{
+    border: 1px solid black;
+}
+.wrap{
+    display: grid;
+    grid-template-columns:1fr 4fr 1fr ;
+    grid-template-rows: 1.5fr 1fr 5fr 1fr ;
+}
+.menu, .search, .usericon{
+    text-align: center;
+    font-size:  2em;
+}
+.tag{
+    grid-column: 2;
+}
+.tag ul{
+    display: flex;
+    list-style: none;
+}
+.main-grid{
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+.section1{
+    grid-column: 1 / 4;
+}
+.footer{
+    display: grid;
+    grid-column-end: span 3 ;
+
+}
